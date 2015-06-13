@@ -36,7 +36,6 @@ namespace MVCExam.Data.Migrations
 
         public void CreateUsers(ExamDbContext context)
         {
-            
             UserStore<User> userStore = new UserStore<User>(context);
             ApplicationUserManager userManager = new ApplicationUserManager(userStore);
 

@@ -6,13 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
+using MVCExam.Data.Contracts;
 using MVCExam.Data.Migrations;
 using MVCExam.Models;
 using MVCExam.Models;
 
 namespace MVCExam.Data
 {
-    public class ExamDbContext : IdentityDbContext<User>
+    public class ExamDbContext : IdentityDbContext<User>, IExamDbContext
     {
         public ExamDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
