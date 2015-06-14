@@ -1,1 +1,8 @@
 ﻿
+@model MVCExam.Web.Models.TeamsViewModel
+
+<div class="match-container container col-md-12">
+    <div class="team-name"> <h2>@Html.ActionLink(Model.Name, "Detail/" + Model.TeamId, "Teams")</h2> </div>
+    <div class="team-website"> <a href="@Model.Website"> @Model.Website </a> </div>
+    <div class="team-votes"> Votes: @Model.Votes </div>
+</div>

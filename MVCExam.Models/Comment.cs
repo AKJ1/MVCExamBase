@@ -8,6 +8,7 @@ namespace MVCExam.Models
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Dynamic;
 
     public class Comment
     {
@@ -23,6 +24,11 @@ namespace MVCExam.Models
 
         [Required]
         public virtual User Author { get; set; }
+
+        public virtual Match Match { get; set; }
+
+        [ForeignKey("Match")]
+        public int MatchId { get; set; }
 
         [ForeignKey("Author")]
         public string AuthorId { get; set; }

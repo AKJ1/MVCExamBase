@@ -1,0 +1,38 @@
+﻿@using MVCExam.Web.Models
+@model MVCExam.Web.Models.MatchViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-8">
+            <h2>Match: </h2>
+            <h4> Home Team: @Html.ActionLink(Model.HomeTeam.Name.ToString(), "Detail/" + Model.HomeTeam.TeamId, "Teams")</h4><span class="bets">Bets : @Model.HomeTeamBetAmount$</span>
+            <h4> Away Team: @Html.ActionLink(Model.AwayTeam.Name.ToString(), "Detail/" + Model.AwayTeam.TeamId, "Teams")</h4><span class="bets">Bets : @Model.AwayTeamBetAmount$</span>
+            <div class="dateandtime">
+                <p>Date and Time : @Model.MatchDate</p>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("BetForm", new BetPostModel())
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var comment in Model.Comments)
+        {
+            Html.Partial("CommentPartial", "comment");
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("CommentBoxPartial", new CommentPostModel());
+    </div>
+</div>

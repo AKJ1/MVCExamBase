@@ -1,0 +1,14 @@
+﻿@model MVCExam.Web.Models.BetPostModel
+<div class="form-group">
+    <label>Bet On Home Team</label>
+    <br />
+        @Html.TextBoxFor( m => m.HomeAmount, new { @type = "number"})
+    <br />
+    <button class="btn btn-primary">Bet!</button>
+    <br />
+    <label>Bet On Away Team</label>
+    <br />
+        @Html.TextBoxFor(m => m.AwayAmount, new { @type = "number"})
+    <br />
+    <button class="btn btn-primary">Bet!</button>
+</div>

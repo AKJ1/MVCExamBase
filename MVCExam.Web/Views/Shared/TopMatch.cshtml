@@ -1,1 +1,6 @@
-﻿
+﻿@model MVCExam.Web.Models.MatchViewModel
+
+<div class="match-container container col-md-12">
+    <div class="match-name"> <h2>@Html.ActionLink(Model.HomeTeam.Name + " vs " + Model.AwayTeam.Name, "Detail/" + Model.MatchId, "Match")</h2> </div>
+    <div class="match-time"> Starts On : @Model.MatchDate </div>
+</div>

@@ -1,0 +1,9 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <h2>Add a comment:</h2>
+    <div class="form-group">
+        <label>Comment</label>
+        <textarea class="form-control"></textarea>
+        <button class="btn btn-primary">Comment!</button>
+    </div>
+}

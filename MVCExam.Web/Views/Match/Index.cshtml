@@ -1,0 +1,27 @@
+﻿@model MVCExam.Web.Models.MatchesModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Matches</h2>
+
+<div class="form-group">
+    <div class="col-md-12 col-lg-12 col-sm-12">
+        @if (Model.Matches != null)
+        {
+            foreach (var match in Model.Matches)
+            {
+                <div>@Html.Partial("TopMatch", match)</div>
+            }
+        }
+    </div>
+    @if (Model.Page > 0)
+    {
+        <button class="btn btn-info">@Html.ActionLink("Prev Page", "Index/" + (@Model.Page-1)) </button>
+    }
+    @if (Model.Page < Model.LastPage)
+    {
+        <button class="btn btn-info">@Html.ActionLink("Next Page", "Index/"+ (@Model.Page+1))</button>
+    }
+</div>

@@ -1,0 +1,34 @@
+﻿@using MVCExam.Models
+@model MVCExam.Web.Models.TeamsViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-8">
+            <h2>@Model.Name</h2>
+            <div>Nickname : @Model.NickName</div>
+            <div>Founded : @Model.FoundedOn</div>
+        </div>
+        <div class="col-md-4">
+            Votes : @Model.Votes
+            @if (!Model.HasVoted)
+            {
+                @Html.ActionLink("Vote!", "Vote/" + Model.TeamId, "Teams", htmlAttributes: new { @class="btn btn-success"})
+            }
+            else
+            {
+                <h3>You are already voted.</h3>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Players:</h2>
+        @foreach(var player in Model.Players)
+        {
+            @Html.Partial("PlayerPartial", player)
+        }
+    </div>
+</div>
+

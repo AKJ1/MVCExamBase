@@ -10,9 +10,9 @@ using MVCExam.Models;
 
 namespace MVCExam.Data.UnitOfWork
 {
-    class ExamData: IExamData
+    public class ExamData: IExamData
     {
-        private DbContext context;
+        public ExamDbContext context;
         private IDictionary<Type, object> repositories;
 
         public ExamData()

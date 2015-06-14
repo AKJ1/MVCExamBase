@@ -25,3 +25,4 @@ C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsof
 C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\obj\Debug\MVCExam.Models.dll
 C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\obj\Debug\MVCExam.Models.pdb
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\obj\Debug\MVCExam.Models.csprojResolveAssemblyReference.cache

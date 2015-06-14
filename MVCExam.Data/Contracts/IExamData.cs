@@ -7,7 +7,7 @@ using MVCExam.Models;
 
 namespace MVCExam.Data.Contracts
 {
-    interface IExamData
+    public interface IExamData
     {
         IRepository<User> Users { get; }
 
