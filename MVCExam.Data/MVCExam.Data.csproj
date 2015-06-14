@@ -73,10 +73,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IExamData.cs" />
+    <Compile Include="Contracts\IExamDbContext.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="ExamDbContext.cs" />
     <Compile Include="IdentityConfig.cs" />
     <Compile Include="Migrations\ExamDbMigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="UnitOfWork\ExamData.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVCExam.Models\MVCExam.Models.csproj">
@@ -88,11 +93,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="UnitOfWork\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

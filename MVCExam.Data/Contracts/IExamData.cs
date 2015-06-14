@@ -10,6 +10,19 @@ namespace MVCExam.Data.Contracts
     interface IExamData
     {
         IRepository<User> Users { get; }
+
+        IRepository<Player> Players { get; }
+
+        IRepository<Team> Teams { get; }
+
+        IRepository<Match> Matches { get; }
+
+        IRepository<Vote> Votes { get; }
+
+        IRepository<Bet> Bets { get; }
+
+        IRepository<Comment> Comments { get; }
+
         int SaveChanges();
 
     }

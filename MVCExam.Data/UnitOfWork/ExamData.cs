@@ -31,6 +31,36 @@ namespace MVCExam.Data.UnitOfWork
             get { return this.GetRepository<User>(); }
         }
 
+        public IRepository<Player> Players
+        {
+            get { return this.GetRepository<Player>(); }
+        }
+
+        public IRepository<Team> Teams
+        {
+            get { return this.GetRepository<Team>(); }
+        }
+
+        public IRepository<Match> Matches
+        {
+            get { return this.GetRepository<Match>(); }
+        }
+
+        public IRepository<Vote> Votes
+        {
+            get { return this.GetRepository<Vote>(); }
+        }
+
+        public IRepository<Bet> Bets
+        {
+            get { return this.GetRepository<Bet>(); }
+        }
+
+        public IRepository<Comment> Comments
+        {
+            get { return this.GetRepository<Comment>(); }
+        }
+
         public int SaveChanges()
         {
             return this.context.SaveChanges();
@@ -42,11 +72,7 @@ namespace MVCExam.Data.UnitOfWork
             if (!this.repositories.ContainsKey(type))
             {
                 var typeOfRepo = typeof(GenericRepository<T>);
-                //if (type.IsAssignableFrom(typeof(ApplicationUser)))
-                //{
-                //    typeOfRepo = typeof(UsersRepository);
-                //}
-
+                
                 var repo = Activator.CreateInstance(typeOfRepo, this.context);
                 this.repositories.Add(type, repo);
             }

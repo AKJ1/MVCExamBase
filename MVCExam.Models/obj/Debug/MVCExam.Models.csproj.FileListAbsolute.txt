@@ -12,3 +12,16 @@ c:\Users\Ace\documents\visual studio 2013\Projects\MVCExam\MVCExam.Models\bin\De
 c:\Users\Ace\documents\visual studio 2013\Projects\MVCExam\MVCExam.Models\obj\Debug\MVCExam.Models.csprojResolveAssemblyReference.cache
 c:\Users\Ace\documents\visual studio 2013\Projects\MVCExam\MVCExam.Models\obj\Debug\MVCExam.Models.dll
 c:\Users\Ace\documents\visual studio 2013\Projects\MVCExam\MVCExam.Models\obj\Debug\MVCExam.Models.pdb
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\MVCExam.Models.dll.config
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\MVCExam.Models.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\MVCExam.Models.pdb
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\EntityFramework.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\EntityFramework.xml
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\obj\Debug\MVCExam.Models.dll
+C:\Users\UniUser\Documents\MVCExam\MVCExamBase\MVCExam.Models\obj\Debug\MVCExam.Models.pdb

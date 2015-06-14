@@ -14,14 +14,13 @@ namespace MVCExam.Data.Repositories
     using System.Linq.Expressions;
     using Contracts;
     using Models;
-    using Models.PlayerAssets;
 
     public class GenericRepository<T> : IRepository<T> where T : class
     {
-        private readonly IOnixiaDbContext context;
+        private readonly ExamDbContext context;
         private readonly IDbSet<T> set;
 
-        public GenericRepository(IOnixiaDbContext context)
+        public GenericRepository(ExamDbContext context)
         {
             this.context = context;
             this.set = context.Set<T>();
